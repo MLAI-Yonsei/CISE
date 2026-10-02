@@ -1,11 +1,11 @@
 # CISE: Conformal Interval-Driven Self-Evolution
 
-CISE is a framework for materials discovery with large language models and imperfect property predictors. It combines evolutionary structure search with candidate-specific conformal intervals to guide feedback and select materials that satisfy the target constraints.
+CISE is a framework for reliable self-evolving LLM agents that operate with imperfect proxy reward models. In many open-ended search problems, true rewards are expensive or impractical to obtain during evolution, so agents inevitably rely on cheaper but imperfect proxy evaluations. CISE uses candidate-specific conformal intervals to account for uncertainty in these proxy rewards, guiding evolutionary feedback and selecting solutions that reliably satisfy target constraints.
 
-This repository includes two search methods:
+This repository includes two self-evolution methods:
 
-- **LLEMA:** evolutionary search using point predictions from fixed property models.
-- **CISE:** evolutionary search using Gibbs conformal intervals and online density-ratio estimation. Configuration files use the method identifier `cci`.
+- **LLEMA:** evolutionary search using point estimates from fixed proxy reward models.
+- **CISE:** evolutionary search using Gibbs conformal intervals and online density-ratio estimation.
 
 ## Installation
 
