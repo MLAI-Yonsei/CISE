@@ -1,0 +1,17 @@
+{
+  "method": "cci",
+  "output_dir": "../runs/cci_demo",
+  "tasks": [
+    "wbg"
+  ],
+  "iterations": 2,
+  "seed": 20260910,
+  "demo": true,
+  "parallel_tasks": 1,
+  "cci": {
+    "engine": "gibbs",
+    "admission_min_valid": 2,
+    "alpha_total": 0.1,
+    "quantile_offset": true
+  }
+}
